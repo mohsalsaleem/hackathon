@@ -1,4 +1,13 @@
 <template name = "buyerProfile">
     Hello!I'm a Buyer
     <a href="/" class="logout">Logout</a><br/>
+    {{#each feed}}
+    {{Title}}<br>
+    {{Location}}<br>
+    {{Offer}}<br>
+    {{Description}}<br>
+    {{Contact}}<br>
+    {{Company}}<br>
+    {{Website}}<br><br>
+    {{/each}}
 </template>

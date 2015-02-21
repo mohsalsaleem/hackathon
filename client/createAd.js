@@ -38,7 +38,8 @@ Template.createAd.events({
            Description:description,
            Contact:contact,
            Company:company,
-           Website:url
+           Website:url,
+           CreatedAt:Date.now()
        });
        
        
