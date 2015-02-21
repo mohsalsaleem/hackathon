@@ -12,3 +12,4 @@ iron:router
 accounts-password
 cfs:filesystem
 cfs:standard-packages
+mdg:geolocation
