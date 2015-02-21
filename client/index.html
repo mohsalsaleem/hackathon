@@ -1,0 +1,14 @@
+<template name = "index">
+{{#if currentUser}}
+    Just a minute!!
+    {{#if userType}}
+        {{> buyerProfile}}
+    {{else}}
+        {{> sellerProfile}}
+    {{/if}}
+    {{else}}
+        {{> register}}
+        <center><h2>You have an account?</h2></center>
+        {{> login}}
+    {{/if}}
+</template>
