@@ -6,4 +6,5 @@
         Create Ad,
         View the Ads posted by you
       as a Buyer:
-        Find the offers available near your locaiton
+        Find the offers available near your 
+        
