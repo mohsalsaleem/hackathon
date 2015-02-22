@@ -1,16 +1,8 @@
 <template name = "sellerProfile">
-    Hello !I'm a seller! and i'm {{profileID}}
-    <a href="/" class="logout">Logout</a><br/>
-    <a href="/createAd" class="createAd">Create Ad!</a>
-    Ads Created By You!!<br>
-    {{#each feed}}
-    {{Title}}<br>
-    {{Location}}<br>
-    {{Offer}}<br>
-    {{Description}}<br>
-    {{Contact}}<br>
-    {{Company}}<br>
-    {{Website}}<br><br>
-    {{/each}}
+    <div class="container"> <div class="col-md-4 col-xs-12"> Hello!<strong> {{profileID}}!</strong>      <a href="/" class="logout">Logout</a><br/> <a href="/createAd" class="createAd btn btn-sm btn-block btn-primary">Create Ad!</a> <br> Ads Created By You!!<br> {{#each feed}} <div class="well"> <h4> {{Title}} </h4> 
+        <li><b>Location: </b>
+        {{Location}}</li> <li><b>Offer: </b>{{Offer}}%</li>
+        <li><b>Description: </b>{{Description}}</li>
+        <li><b>Mobile: </b>{{Contact}}</li> <li><b>Company: </b>{{Company}}</li> <li><b>Website: </b>{{Website}}</li> </div> {{/each}} </div> </div>
     
 </template>
