@@ -39,8 +39,11 @@ Template.createAd.events({
            Contact:contact,
            Company:company,
            Website:url,
-           CreatedAt:Date.now()
+           CreatedAt:Date.now(),
+           addedBy:Meteor.user().emails[0].address
        });
+        
+        Router.go('/');
        
        
    } 

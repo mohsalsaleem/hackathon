@@ -2,14 +2,10 @@
 
 Template.buyerProfile.helpers({
     'feed':function(){
-        return AdDetails.find({},{$selector:{"Location":"adayar"}});
+        return AdDetails.find({Location:"Adyar"});
     },
     'loc':function(){
-        var location =  Geolocation.latLng()
-        var lati = location.lat;
-        var long = location.lng;
-        //console.log(lati);
-      
+        var location =  Geolocation.latLng();
         return location;
         
         
