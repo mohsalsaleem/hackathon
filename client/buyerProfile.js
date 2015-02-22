@@ -7,9 +7,9 @@ Template.buyerProfile.helpers({
     'loc':function(){
         var location =  Geolocation.latLng();
         return location;
-        
-        
-        
+    },
+    'profileID':function(){
+        return Meteor.user().emails[0].address;
     }
 })
 

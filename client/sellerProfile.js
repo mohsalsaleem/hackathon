@@ -2,6 +2,9 @@ Template.sellerProfile.helpers({
     
     'feed':function(){
         return AdDetails.find({addedBy:Meteor.user().emails[0].address});
+    },
+    'profileID':function(){
+        return Meteor.user().emails[0].address;
     }
 })
 
